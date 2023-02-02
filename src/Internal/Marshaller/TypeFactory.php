@@ -138,10 +138,11 @@ class TypeFactory implements RuleFactoryInterface
         yield DateTimeType::class;
         yield DateIntervalType::class;
         yield ArrayType::class;
-        yield ObjectType::class;
 
         if (PHP_VERSION_ID >= 80104) {
             yield EnumType::class;
         }
+
+        yield ObjectType::class;
     }
 }
